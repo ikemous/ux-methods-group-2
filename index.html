@@ -3,11 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To Do App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css" />
 </head>
 <body>
-    
+    <main>
+        <section>
+            <div class="heading listStart">
+                <p class="heading-title">TO DO</p>
+                <button class="button row-button">
+                    <span class="material-symbols-outlined" id="add-task">
+                        add
+                    </span>
+                </button>
+            </div>
+            <ul class="task-list">
+                <li class="task incomplete">
+                    <div class="todo-content">
+                        <p class="task-title">Call Mom</p>
+                        <p class="task-metadata">10/25/24 8:00am</p>
+                    </div>
+                    <button class="button row-button">
+                        <span class="material-symbols-outlined">
+                            edit
+                        </span>
+                    </button>
+                </li>
+                <li class="task complete">
+                    <div class="todo-content">
+                        <p class="task-title">Call Mom</p>
+                        <p class="task-metadata">10/25/24 8:00am</p>
+                    </div>
+                    <button class="button row-button">
+                        <span class="material-symbols-outlined">
+                            edit
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </section>
+        <div class="modal-container" id="modal-container">
+            <div class="modal" id="modal">
+
+            </div>
+        </div>
+    </main>
     <script src="./js/index.js"></script>
 </body>
 </html>
